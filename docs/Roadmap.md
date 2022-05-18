@@ -20,7 +20,7 @@ As a tentative definition, open to discussion
  
 In a typical setup, an encoder-decoder style LM could be trained on an independent text corpus, and an image classification model on a similarly independent set of images. Finally, an adaptor layer, perhaps a matrix, could learn a mapping from, for instance, a special encoder token distinguished to carry the sentence context during training, to the output of a convolutional filter in the image classifier using a third coupling dataset. This is represented in the figure below.
 
-![image info](./fig1.png)
+![image info](./fig1.PNG)
 
 If a language model can successfully couple with a convnet filter, it can be used to explain the meaning of the filter in plain-text English by finding sentences which maximally excite the filter. This would be a novel technique in its own right, but more excitingly, it could be extended to other types of models where the input data is not as easily interpretable as a single image (for instance a sequence model which supports inputs from different modalities such as text, images, and panel data). The convolutional filter is a natural target to attack first as there is prior art to help verify the technique's utility, however, coupling to a single convolutional channel should not necessarily be any more difficult than coupling to a set of attention heads or larger swaths of the network.
 
