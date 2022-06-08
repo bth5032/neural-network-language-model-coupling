@@ -38,3 +38,7 @@ The most basic building block of this design is the use of an adapter layer betw
 
 ## Resources
 [COCO dataset](https://cocodataset.org/#home) 
+
+## Other Interesting Ideas
+
+Much of human thought is in speech and language. The process of problem solving typically involves posing questions to yourself in speech and interacting with some computational layer in your head, then getting answers in speech. This also sometimes occurs in images or 3D spaces. Can we create a model that poses questions to itself in order to learn without data?
