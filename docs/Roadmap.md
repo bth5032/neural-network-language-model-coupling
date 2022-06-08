@@ -16,7 +16,7 @@ As a first step, we restrict ourselves to convolutional networks, as there has b
 
 As a tentative definition, open to discussion
 
- > Given two models $A$ and $B$ which have input spaces $V_A$ and $V_B$ respectively together with a dataset that contains pairs $(v_A, v_B) \vert v_a \in V_A, v_b \in V_B$. The models are called coupled if some portion of the internal representation of any $v_a$ in $A$ is identical, or mappable under a fixed and known differentiable function $f$, to some corresponding portion of the internal representation of $v_b$ in $B$.
+ > Given two models $A$ and $B$ which have input spaces $V_A$ and $V_B$ respectively together with a dataset that contains pairs $(v_A, v_B) \vert v_a \in V_A, v_b \in V_B$. The models are called coupled if some portion of the internal representation of any $v_A$ in $A$ is identical, or mappable under a fixed and known differentiable function $f$, to some corresponding portion of the internal representation of $v_B$ in $B$ for pairs $(v_A, v_B)$.
  
 In a typical setup, an encoder-decoder style LM could be trained on an independent text corpus, and an image classification model on a similarly independent set of images. Finally, an adaptor layer, perhaps a matrix, could learn a mapping from, for instance, a special encoder token distinguished to carry the sentence context during training, to the output of a convolutional filter in the image classifier using a third coupling dataset. This is represented in the figure below.
 
